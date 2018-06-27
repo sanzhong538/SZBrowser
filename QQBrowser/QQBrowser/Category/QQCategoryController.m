@@ -23,7 +23,6 @@
     [super viewDidLoad];
     
     [UIApplication sharedApplication].statusBarStyle = UIStatusBarStyleDefault;
-    self.navigationController.interactivePopGestureRecognizer.enabled = YES;
     self.navigationController.interactivePopGestureRecognizer.delegate = self;
     self.tabBarHeight = [UIDevice isIPoneX] ? 83 : 49;
     self.statusHeight = [UIApplication sharedApplication].statusBarFrame.size.height;
