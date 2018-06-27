@@ -80,10 +80,7 @@
     _dict = nil;
     _historyDict = nil;
     self.searchField.text = searchStr;
-    if ([self isUrl:searchStr] && [searchStr containsString:@"."]) {
-//        if (searchStr.length>4 && [[searchStr substringToIndex:4] isEqualToString:@"www."]) {
-//            searchStr = [NSString stringWithFormat:@"http://%@",searchStr];
-//        }
+    if ([self isUrl:searchStr]) {
         if (![searchStr hasPrefix:@"http"]) {
             searchStr = [NSString stringWithFormat:@"http://%@",searchStr];
         }
@@ -97,15 +94,10 @@
 - (BOOL)isUrl:(NSString *)str {
     
     if(str == nil) return NO;
-//    NSString *url;
-//    if (str.length>4 && [[str substringToIndex:4] isEqualToString:@"www."]) {
-//        url = [NSString stringWithFormat:@"http://%@",str];
-//    } else {
-//        url = str;
-//    }
+    
 //    NSString *urlRegex = @"(https|http|ftp|rtsp|igmp|file|rtspt|rtspu)://((((25[0-5]|2[0-4]\\d|1?\\d?\\d)\\.){3}(25[0-5]|2[0-4]\\d|1?\\d?\\d))|([0-9a-z_!~*'()-]*\\.?))([0-9a-z][0-9a-z-]{0,61})?[0-9a-z]\\.([a-z]{2,6})(:[0-9]{1,4})?([a-zA-Z/?_=]*)\\.\\w{1,5}";
     
-    NSString *urlRegex = @"^[a-zA-Z]+(//:)?[a-zA-Z0-9.]+[a-zA-Z0-9?&]*[a-zA-Z0-9]$";
+    NSString *urlRegex = @"^[a-zA-Z]+(//:)?[a-zA-Z0-9.]+\\.[a-zA-Z0-9?&]*[a-zA-Z0-9]$";
     NSPredicate* urlTest = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", urlRegex];
     return [urlTest evaluateWithObject:str];
 }
