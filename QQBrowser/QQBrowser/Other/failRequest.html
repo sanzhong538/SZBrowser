@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>请求失败！</title>
+<style>
+	body{
+        text-align:center;
+        vertical-align:middle;
+    }
+</style>
+<script>
+	function clickBackBtn() {
+        window.webkit.messageHandlers.back.postMessage({back:"back"});
+	}
+	
+	function clickRefreshBtn() {
+		window.webkit.messageHandlers.refresh.postMessage({refresh:"refresh"});
+	}
+
+    function hiddenNavigationBar() {
+        window.webkit.messageHandlers.hiddenNavigationBar.postMessage({hiddenNavigationBar:"hiddenNavigationBar"});
+    }
+
+    function loginAgain() {
+        window.webkit.messageHandlers.loginAgain.postMessage({loginAgain:"loginAgain"});
+    }
+
+    function setBackgroundColor(){
+        window.webkit.messageHandlers.backgroundColor.postMessage({backgroundColor:"0xE44C61"});
+    }
+</script>
+</head>
+<body>
+	<p>网页加载失败</p>
+	<button type="button" onclick="clickBackBtn()">返回</button>
+	<button type="button" onclick="clickRefreshBtn()">刷新</button>
+</body>
+</html>

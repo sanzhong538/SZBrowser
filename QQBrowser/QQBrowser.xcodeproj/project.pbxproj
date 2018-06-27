@@ -1,0 +1,792 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0BADB954F2D0CB14A2A5A8E0 /* libPods-QQBrowser.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E237F1FF67E04FA21E4BC2ED /* libPods-QQBrowser.a */; };
+		420022AB20DDFC1900FD9969 /* QQSearchController.m in Sources */ = {isa = PBXBuildFile; fileRef = 420022AA20DDFC1900FD9969 /* QQSearchController.m */; };
+		420022AE20DE448300FD9969 /* QQSearchHistoryView.m in Sources */ = {isa = PBXBuildFile; fileRef = 420022AD20DE448300FD9969 /* QQSearchHistoryView.m */; };
+		420BE07220E1088400B1292C /* QQPictureView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 420BE07120E1088400B1292C /* QQPictureView.xib */; };
+		420BE07520E11FA600B1292C /* QQWindController.m in Sources */ = {isa = PBXBuildFile; fileRef = 420BE07420E11FA600B1292C /* QQWindController.m */; };
+		420BE07820E1206700B1292C /* QQNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 420BE07720E1206700B1292C /* QQNavigationController.m */; };
+		420E80B820DA81C50090C4EF /* MainTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 420E80B720DA81C50090C4EF /* MainTableCell.m */; };
+		420E80BB20DA828A0090C4EF /* MainCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 420E80BA20DA828A0090C4EF /* MainCollectionCell.m */; };
+		420E80BE20DA86340090C4EF /* UIDevice+Type.m in Sources */ = {isa = PBXBuildFile; fileRef = 420E80BD20DA86340090C4EF /* UIDevice+Type.m */; };
+		4225F58A20DD0DEB00A44124 /* QQColorMenuView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4225F58920DD0DEB00A44124 /* QQColorMenuView.xib */; };
+		42E1EAE320DF5AD100C0EBB8 /* WKWebView+Storage.m in Sources */ = {isa = PBXBuildFile; fileRef = 42E1EAE220DF5AD100C0EBB8 /* WKWebView+Storage.m */; };
+		42E1EAE720DF818700C0EBB8 /* QQHistoryController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42E1EAE620DF818700C0EBB8 /* QQHistoryController.m */; };
+		42E1EAEB20DF902200C0EBB8 /* QQHistoryCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 42E1EAEA20DF902200C0EBB8 /* QQHistoryCell.m */; };
+		42E1EAEF20DFF47E00C0EBB8 /* QQSettingController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42E1EAEE20DFF47E00C0EBB8 /* QQSettingController.m */; };
+		527F5FC120E1C7470054A202 /* HJCarouselViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 527F5FC020E1C7470054A202 /* HJCarouselViewLayout.m */; };
+		527F5FC420E1CAD70054A202 /* QQCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 527F5FC320E1CAD70054A202 /* QQCollectionCell.m */; };
+		527F5FC820E213D40054A202 /* QQScanController.m in Sources */ = {isa = PBXBuildFile; fileRef = 527F5FC720E213D40054A202 /* QQScanController.m */; };
+		528C964920DC87EE0022EE29 /* UIImage+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 528C964820DC87EE0022EE29 /* UIImage+Extension.m */; };
+		528C967D20DC94DC0022EE29 /* QQPagesController.m in Sources */ = {isa = PBXBuildFile; fileRef = 528C967C20DC94DC0022EE29 /* QQPagesController.m */; };
+		528C96E520DC9D680022EE29 /* QQRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 528C96E420DC9D680022EE29 /* QQRootViewController.m */; };
+		528C970C20DCEBA10022EE29 /* QQBaseNavController.m in Sources */ = {isa = PBXBuildFile; fileRef = 528C970B20DCEBA10022EE29 /* QQBaseNavController.m */; };
+		528C970F20DCF09C0022EE29 /* QQMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = 528C970E20DCF09C0022EE29 /* QQMenuView.m */; };
+		528C971120DCF0AE0022EE29 /* QQMenuView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 528C971020DCF0AE0022EE29 /* QQMenuView.xib */; };
+		528C971420DCF7630022EE29 /* MenuButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 528C971320DCF7630022EE29 /* MenuButton.m */; };
+		529843C920E315A8000E9168 /* QQGuideController.m in Sources */ = {isa = PBXBuildFile; fileRef = 529843C820E315A8000E9168 /* QQGuideController.m */; };
+		529B59FD20DB345D00EF2C23 /* QQWeatherController.m in Sources */ = {isa = PBXBuildFile; fileRef = 529B59FC20DB345D00EF2C23 /* QQWeatherController.m */; };
+		529B5A0120DB793F00EF2C23 /* QQDetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = 529B5A0020DB793F00EF2C23 /* QQDetailController.m */; };
+		529B5A0520DB87C300EF2C23 /* QQCategoryController.m in Sources */ = {isa = PBXBuildFile; fileRef = 529B5A0420DB87C300EF2C23 /* QQCategoryController.m */; };
+		52A8DCA120E08314001A7926 /* QQSetFontController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52A8DCA020E08314001A7926 /* QQSetFontController.m */; };
+		52A8DCA420E08333001A7926 /* QQClearCacheController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52A8DCA320E08333001A7926 /* QQClearCacheController.m */; };
+		52A8DCA720E0835A001A7926 /* QQChangeUAController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52A8DCA620E0835A001A7926 /* QQChangeUAController.m */; };
+		52A8DCAA20E0E44B001A7926 /* QQURLProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = 52A8DCA920E0E44B001A7926 /* QQURLProtocol.m */; };
+		52CD180620DA38960098A876 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52CD180420DA38960098A876 /* Main.storyboard */; };
+		52CD180820DA389B0098A876 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52CD180720DA389B0098A876 /* Assets.xcassets */; };
+		52CD180B20DA389B0098A876 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52CD180920DA389B0098A876 /* LaunchScreen.storyboard */; };
+		52CD180E20DA389B0098A876 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 52CD180D20DA389B0098A876 /* main.m */; };
+		52CD181720DA39880098A876 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 52CD181620DA39880098A876 /* AppDelegate.m */; };
+		52CD182B20DA3B7D0098A876 /* BBConst.m in Sources */ = {isa = PBXBuildFile; fileRef = 52CD181C20DA3B7D0098A876 /* BBConst.m */; };
+		52CD182D20DA3B7D0098A876 /* BBNetworkTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 52CD182020DA3B7D0098A876 /* BBNetworkTool.m */; };
+		52CD182E20DA3B7D0098A876 /* BBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 52CD182220DA3B7D0098A876 /* BBProgressHUD.m */; };
+		52CD182F20DA3B7D0098A876 /* NSArray+Log.m in Sources */ = {isa = PBXBuildFile; fileRef = 52CD182420DA3B7D0098A876 /* NSArray+Log.m */; };
+		52CD183020DA3B7D0098A876 /* NSString+MD5.m in Sources */ = {isa = PBXBuildFile; fileRef = 52CD182620DA3B7D0098A876 /* NSString+MD5.m */; };
+		52CD183120DA3B7D0098A876 /* UIBarButtonItem+SZ.m in Sources */ = {isa = PBXBuildFile; fileRef = 52CD182820DA3B7D0098A876 /* UIBarButtonItem+SZ.m */; };
+		52CD183220DA3B7D0098A876 /* UIView+SZFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 52CD182A20DA3B7D0098A876 /* UIView+SZFrame.m */; };
+		52CD183620DA3C910098A876 /* QQBaseTableController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52CD183520DA3C910098A876 /* QQBaseTableController.m */; };
+		52CD183920DA3CD00098A876 /* QQBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52CD183820DA3CD00098A876 /* QQBaseViewController.m */; };
+		52CD183C20DA4A4B0098A876 /* QQMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52CD183B20DA4A4B0098A876 /* QQMainViewController.m */; };
+		52CD184020DA4F060098A876 /* MainTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 52CD183F20DA4F060098A876 /* MainTableView.m */; };
+		52CD184220DA53960098A876 /* failRequest.html in Resources */ = {isa = PBXBuildFile; fileRef = 52CD184120DA53960098A876 /* failRequest.html */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		19409D4F409912CFD9E7F9FF /* Pods-QQBrowser.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QQBrowser.release.xcconfig"; path = "Pods/Target Support Files/Pods-QQBrowser/Pods-QQBrowser.release.xcconfig"; sourceTree = "<group>"; };
+		420022A920DDFC1900FD9969 /* QQSearchController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QQSearchController.h; sourceTree = "<group>"; };
+		420022AA20DDFC1900FD9969 /* QQSearchController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QQSearchController.m; sourceTree = "<group>"; };
+		420022AC20DE448300FD9969 /* QQSearchHistoryView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QQSearchHistoryView.h; sourceTree = "<group>"; };
+		420022AD20DE448300FD9969 /* QQSearchHistoryView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QQSearchHistoryView.m; sourceTree = "<group>"; };
+		420BE07120E1088400B1292C /* QQPictureView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QQPictureView.xib; sourceTree = "<group>"; };
+		420BE07320E11FA600B1292C /* QQWindController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QQWindController.h; sourceTree = "<group>"; };
+		420BE07420E11FA600B1292C /* QQWindController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QQWindController.m; sourceTree = "<group>"; };
+		420BE07620E1206700B1292C /* QQNavigationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QQNavigationController.h; sourceTree = "<group>"; };
+		420BE07720E1206700B1292C /* QQNavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QQNavigationController.m; sourceTree = "<group>"; };
+		420E80B620DA81C50090C4EF /* MainTableCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainTableCell.h; sourceTree = "<group>"; };
+		420E80B720DA81C50090C4EF /* MainTableCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainTableCell.m; sourceTree = "<group>"; };
+		420E80B920DA828A0090C4EF /* MainCollectionCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainCollectionCell.h; sourceTree = "<group>"; };
+		420E80BA20DA828A0090C4EF /* MainCollectionCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainCollectionCell.m; sourceTree = "<group>"; };
+		420E80BC20DA86340090C4EF /* UIDevice+Type.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIDevice+Type.h"; sourceTree = "<group>"; };
+		420E80BD20DA86340090C4EF /* UIDevice+Type.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+Type.m"; sourceTree = "<group>"; };
+		4225F58920DD0DEB00A44124 /* QQColorMenuView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QQColorMenuView.xib; sourceTree = "<group>"; };
+		42E1EAE120DF5AD100C0EBB8 /* WKWebView+Storage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WKWebView+Storage.h"; sourceTree = "<group>"; };
+		42E1EAE220DF5AD100C0EBB8 /* WKWebView+Storage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "WKWebView+Storage.m"; sourceTree = "<group>"; };
+		42E1EAE520DF818700C0EBB8 /* QQHistoryController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QQHistoryController.h; sourceTree = "<group>"; };
+		42E1EAE620DF818700C0EBB8 /* QQHistoryController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QQHistoryController.m; sourceTree = "<group>"; };
+		42E1EAE920DF902200C0EBB8 /* QQHistoryCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QQHistoryCell.h; sourceTree = "<group>"; };
+		42E1EAEA20DF902200C0EBB8 /* QQHistoryCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QQHistoryCell.m; sourceTree = "<group>"; };
+		42E1EAED20DFF47E00C0EBB8 /* QQSettingController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QQSettingController.h; sourceTree = "<group>"; };
+		42E1EAEE20DFF47E00C0EBB8 /* QQSettingController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QQSettingController.m; sourceTree = "<group>"; };
+		527F5FBF20E1C7470054A202 /* HJCarouselViewLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJCarouselViewLayout.h; sourceTree = "<group>"; };
+		527F5FC020E1C7470054A202 /* HJCarouselViewLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJCarouselViewLayout.m; sourceTree = "<group>"; };
+		527F5FC220E1CAD70054A202 /* QQCollectionCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QQCollectionCell.h; sourceTree = "<group>"; };
+		527F5FC320E1CAD70054A202 /* QQCollectionCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QQCollectionCell.m; sourceTree = "<group>"; };
+		527F5FC620E213D40054A202 /* QQScanController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QQScanController.h; sourceTree = "<group>"; };
+		527F5FC720E213D40054A202 /* QQScanController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QQScanController.m; sourceTree = "<group>"; };
+		528C964720DC87EE0022EE29 /* UIImage+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Extension.h"; sourceTree = "<group>"; };
+		528C964820DC87EE0022EE29 /* UIImage+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Extension.m"; sourceTree = "<group>"; };
+		528C967B20DC94DC0022EE29 /* QQPagesController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QQPagesController.h; sourceTree = "<group>"; };
+		528C967C20DC94DC0022EE29 /* QQPagesController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QQPagesController.m; sourceTree = "<group>"; };
+		528C96E320DC9D680022EE29 /* QQRootViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QQRootViewController.h; sourceTree = "<group>"; };
+		528C96E420DC9D680022EE29 /* QQRootViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QQRootViewController.m; sourceTree = "<group>"; };
+		528C970A20DCEBA10022EE29 /* QQBaseNavController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QQBaseNavController.h; sourceTree = "<group>"; };
+		528C970B20DCEBA10022EE29 /* QQBaseNavController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QQBaseNavController.m; sourceTree = "<group>"; };
+		528C970D20DCF09C0022EE29 /* QQMenuView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QQMenuView.h; sourceTree = "<group>"; };
+		528C970E20DCF09C0022EE29 /* QQMenuView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QQMenuView.m; sourceTree = "<group>"; };
+		528C971020DCF0AE0022EE29 /* QQMenuView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QQMenuView.xib; sourceTree = "<group>"; };
+		528C971220DCF7630022EE29 /* MenuButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MenuButton.h; sourceTree = "<group>"; };
+		528C971320DCF7630022EE29 /* MenuButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MenuButton.m; sourceTree = "<group>"; };
+		529843C720E315A8000E9168 /* QQGuideController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QQGuideController.h; sourceTree = "<group>"; };
+		529843C820E315A8000E9168 /* QQGuideController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QQGuideController.m; sourceTree = "<group>"; };
+		529B59FB20DB345D00EF2C23 /* QQWeatherController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QQWeatherController.h; sourceTree = "<group>"; };
+		529B59FC20DB345D00EF2C23 /* QQWeatherController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QQWeatherController.m; sourceTree = "<group>"; };
+		529B59FF20DB793F00EF2C23 /* QQDetailController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QQDetailController.h; sourceTree = "<group>"; };
+		529B5A0020DB793F00EF2C23 /* QQDetailController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QQDetailController.m; sourceTree = "<group>"; };
+		529B5A0320DB87C300EF2C23 /* QQCategoryController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QQCategoryController.h; sourceTree = "<group>"; };
+		529B5A0420DB87C300EF2C23 /* QQCategoryController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QQCategoryController.m; sourceTree = "<group>"; };
+		52A8DC9F20E08314001A7926 /* QQSetFontController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QQSetFontController.h; sourceTree = "<group>"; };
+		52A8DCA020E08314001A7926 /* QQSetFontController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QQSetFontController.m; sourceTree = "<group>"; };
+		52A8DCA220E08333001A7926 /* QQClearCacheController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QQClearCacheController.h; sourceTree = "<group>"; };
+		52A8DCA320E08333001A7926 /* QQClearCacheController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QQClearCacheController.m; sourceTree = "<group>"; };
+		52A8DCA520E0835A001A7926 /* QQChangeUAController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QQChangeUAController.h; sourceTree = "<group>"; };
+		52A8DCA620E0835A001A7926 /* QQChangeUAController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QQChangeUAController.m; sourceTree = "<group>"; };
+		52A8DCA820E0E44B001A7926 /* QQURLProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QQURLProtocol.h; sourceTree = "<group>"; };
+		52A8DCA920E0E44B001A7926 /* QQURLProtocol.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QQURLProtocol.m; sourceTree = "<group>"; };
+		52CD17FB20DA38960098A876 /* QQBrowser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QQBrowser.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		52CD180520DA38960098A876 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		52CD180720DA389B0098A876 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		52CD180A20DA389B0098A876 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		52CD180C20DA389B0098A876 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		52CD180D20DA389B0098A876 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		52CD181520DA39880098A876 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		52CD181620DA39880098A876 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		52CD181B20DA3B7D0098A876 /* BBConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBConst.h; sourceTree = "<group>"; };
+		52CD181C20DA3B7D0098A876 /* BBConst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBConst.m; sourceTree = "<group>"; };
+		52CD181F20DA3B7D0098A876 /* BBNetworkTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBNetworkTool.h; sourceTree = "<group>"; };
+		52CD182020DA3B7D0098A876 /* BBNetworkTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBNetworkTool.m; sourceTree = "<group>"; };
+		52CD182120DA3B7D0098A876 /* BBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBProgressHUD.h; sourceTree = "<group>"; };
+		52CD182220DA3B7D0098A876 /* BBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBProgressHUD.m; sourceTree = "<group>"; };
+		52CD182320DA3B7D0098A876 /* NSArray+Log.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Log.h"; sourceTree = "<group>"; };
+		52CD182420DA3B7D0098A876 /* NSArray+Log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Log.m"; sourceTree = "<group>"; };
+		52CD182520DA3B7D0098A876 /* NSString+MD5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+MD5.h"; sourceTree = "<group>"; };
+		52CD182620DA3B7D0098A876 /* NSString+MD5.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+MD5.m"; sourceTree = "<group>"; };
+		52CD182720DA3B7D0098A876 /* UIBarButtonItem+SZ.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+SZ.h"; sourceTree = "<group>"; };
+		52CD182820DA3B7D0098A876 /* UIBarButtonItem+SZ.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+SZ.m"; sourceTree = "<group>"; };
+		52CD182920DA3B7D0098A876 /* UIView+SZFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+SZFrame.h"; sourceTree = "<group>"; };
+		52CD182A20DA3B7D0098A876 /* UIView+SZFrame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+SZFrame.m"; sourceTree = "<group>"; };
+		52CD183420DA3C910098A876 /* QQBaseTableController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QQBaseTableController.h; sourceTree = "<group>"; };
+		52CD183520DA3C910098A876 /* QQBaseTableController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QQBaseTableController.m; sourceTree = "<group>"; };
+		52CD183720DA3CD00098A876 /* QQBaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QQBaseViewController.h; sourceTree = "<group>"; };
+		52CD183820DA3CD00098A876 /* QQBaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QQBaseViewController.m; sourceTree = "<group>"; };
+		52CD183A20DA4A4B0098A876 /* QQMainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QQMainViewController.h; sourceTree = "<group>"; };
+		52CD183B20DA4A4B0098A876 /* QQMainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QQMainViewController.m; sourceTree = "<group>"; };
+		52CD183E20DA4F060098A876 /* MainTableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainTableView.h; sourceTree = "<group>"; };
+		52CD183F20DA4F060098A876 /* MainTableView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainTableView.m; sourceTree = "<group>"; };
+		52CD184120DA53960098A876 /* failRequest.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = failRequest.html; sourceTree = "<group>"; };
+		C645E9236B4C92B0A4458B78 /* Pods-QQBrowser.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QQBrowser.debug.xcconfig"; path = "Pods/Target Support Files/Pods-QQBrowser/Pods-QQBrowser.debug.xcconfig"; sourceTree = "<group>"; };
+		E237F1FF67E04FA21E4BC2ED /* libPods-QQBrowser.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-QQBrowser.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		52CD17F820DA38960098A876 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0BADB954F2D0CB14A2A5A8E0 /* libPods-QQBrowser.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3EB322527CEAF96F4724B5BF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E237F1FF67E04FA21E4BC2ED /* libPods-QQBrowser.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		420022A820DDFBE000FD9969 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				420022A920DDFC1900FD9969 /* QQSearchController.h */,
+				420022AA20DDFC1900FD9969 /* QQSearchController.m */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		42E1EAE420DF815C00C0EBB8 /* History */ = {
+			isa = PBXGroup;
+			children = (
+				42E1EAE820DF8FE500C0EBB8 /* View */,
+				42E1EAE520DF818700C0EBB8 /* QQHistoryController.h */,
+				42E1EAE620DF818700C0EBB8 /* QQHistoryController.m */,
+			);
+			path = History;
+			sourceTree = "<group>";
+		};
+		42E1EAE820DF8FE500C0EBB8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				42E1EAE920DF902200C0EBB8 /* QQHistoryCell.h */,
+				42E1EAEA20DF902200C0EBB8 /* QQHistoryCell.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		42E1EAEC20DFF45F00C0EBB8 /* Set */ = {
+			isa = PBXGroup;
+			children = (
+				42E1EAED20DFF47E00C0EBB8 /* QQSettingController.h */,
+				42E1EAEE20DFF47E00C0EBB8 /* QQSettingController.m */,
+				52A8DC9F20E08314001A7926 /* QQSetFontController.h */,
+				52A8DCA020E08314001A7926 /* QQSetFontController.m */,
+				52A8DCA220E08333001A7926 /* QQClearCacheController.h */,
+				52A8DCA320E08333001A7926 /* QQClearCacheController.m */,
+				52A8DCA520E0835A001A7926 /* QQChangeUAController.h */,
+				52A8DCA620E0835A001A7926 /* QQChangeUAController.m */,
+			);
+			path = Set;
+			sourceTree = "<group>";
+		};
+		527F5FBE20E1C73C0054A202 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				527F5FBF20E1C7470054A202 /* HJCarouselViewLayout.h */,
+				527F5FC020E1C7470054A202 /* HJCarouselViewLayout.m */,
+				527F5FC220E1CAD70054A202 /* QQCollectionCell.h */,
+				527F5FC320E1CAD70054A202 /* QQCollectionCell.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		527F5FC520E2139A0054A202 /* Scan */ = {
+			isa = PBXGroup;
+			children = (
+				527F5FC620E213D40054A202 /* QQScanController.h */,
+				527F5FC720E213D40054A202 /* QQScanController.m */,
+			);
+			path = Scan;
+			sourceTree = "<group>";
+		};
+		528C967A20DC94720022EE29 /* Pages */ = {
+			isa = PBXGroup;
+			children = (
+				527F5FBE20E1C73C0054A202 /* View */,
+				528C967B20DC94DC0022EE29 /* QQPagesController.h */,
+				528C967C20DC94DC0022EE29 /* QQPagesController.m */,
+			);
+			path = Pages;
+			sourceTree = "<group>";
+		};
+		529B59FA20DB343F00EF2C23 /* Weather */ = {
+			isa = PBXGroup;
+			children = (
+				529B59FB20DB345D00EF2C23 /* QQWeatherController.h */,
+				529B59FC20DB345D00EF2C23 /* QQWeatherController.m */,
+			);
+			path = Weather;
+			sourceTree = "<group>";
+		};
+		529B59FE20DB792300EF2C23 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				529B59FF20DB793F00EF2C23 /* QQDetailController.h */,
+				529B5A0020DB793F00EF2C23 /* QQDetailController.m */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		529B5A0220DB879C00EF2C23 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				529B5A0320DB87C300EF2C23 /* QQCategoryController.h */,
+				529B5A0420DB87C300EF2C23 /* QQCategoryController.m */,
+			);
+			name = Category;
+			path = QQBrowser/Category;
+			sourceTree = SOURCE_ROOT;
+		};
+		52CD17F220DA38950098A876 = {
+			isa = PBXGroup;
+			children = (
+				52CD17FD20DA38960098A876 /* QQBrowser */,
+				52CD17FC20DA38960098A876 /* Products */,
+				ED94C617F9E5EDA643AFCFB8 /* Pods */,
+				3EB322527CEAF96F4724B5BF /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		52CD17FC20DA38960098A876 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				52CD17FB20DA38960098A876 /* QQBrowser.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		52CD17FD20DA38960098A876 /* QQBrowser */ = {
+			isa = PBXGroup;
+			children = (
+				52CD181420DA39880098A876 /* App */,
+				52CD183320DA3C6D0098A876 /* Base */,
+				52CD181820DA398D0098A876 /* Main */,
+				529B59FA20DB343F00EF2C23 /* Weather */,
+				529B59FE20DB792300EF2C23 /* Detail */,
+				529B5A0220DB879C00EF2C23 /* Category */,
+				420022A820DDFBE000FD9969 /* Search */,
+				42E1EAEC20DFF45F00C0EBB8 /* Set */,
+				42E1EAE420DF815C00C0EBB8 /* History */,
+				528C967A20DC94720022EE29 /* Pages */,
+				527F5FC520E2139A0054A202 /* Scan */,
+				52CD181A20DA3B7D0098A876 /* Common */,
+				52CD181920DA39AA0098A876 /* Other */,
+			);
+			path = QQBrowser;
+			sourceTree = "<group>";
+		};
+		52CD181420DA39880098A876 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				52CD181520DA39880098A876 /* AppDelegate.h */,
+				52CD181620DA39880098A876 /* AppDelegate.m */,
+				52A8DCA820E0E44B001A7926 /* QQURLProtocol.h */,
+				52A8DCA920E0E44B001A7926 /* QQURLProtocol.m */,
+				529843C720E315A8000E9168 /* QQGuideController.h */,
+				529843C820E315A8000E9168 /* QQGuideController.m */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		52CD181820DA398D0098A876 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				52CD183D20DA4EE60098A876 /* View */,
+				420BE07320E11FA600B1292C /* QQWindController.h */,
+				420BE07420E11FA600B1292C /* QQWindController.m */,
+				528C96E320DC9D680022EE29 /* QQRootViewController.h */,
+				528C96E420DC9D680022EE29 /* QQRootViewController.m */,
+				52CD183A20DA4A4B0098A876 /* QQMainViewController.h */,
+				52CD183B20DA4A4B0098A876 /* QQMainViewController.m */,
+				420BE07620E1206700B1292C /* QQNavigationController.h */,
+				420BE07720E1206700B1292C /* QQNavigationController.m */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		52CD181920DA39AA0098A876 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				52CD184120DA53960098A876 /* failRequest.html */,
+				52CD180420DA38960098A876 /* Main.storyboard */,
+				52CD180720DA389B0098A876 /* Assets.xcassets */,
+				52CD180920DA389B0098A876 /* LaunchScreen.storyboard */,
+				52CD180C20DA389B0098A876 /* Info.plist */,
+				52CD180D20DA389B0098A876 /* main.m */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		52CD181A20DA3B7D0098A876 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				52CD181B20DA3B7D0098A876 /* BBConst.h */,
+				52CD181C20DA3B7D0098A876 /* BBConst.m */,
+				52CD181F20DA3B7D0098A876 /* BBNetworkTool.h */,
+				52CD182020DA3B7D0098A876 /* BBNetworkTool.m */,
+				52CD182120DA3B7D0098A876 /* BBProgressHUD.h */,
+				52CD182220DA3B7D0098A876 /* BBProgressHUD.m */,
+				52CD182320DA3B7D0098A876 /* NSArray+Log.h */,
+				52CD182420DA3B7D0098A876 /* NSArray+Log.m */,
+				52CD182520DA3B7D0098A876 /* NSString+MD5.h */,
+				52CD182620DA3B7D0098A876 /* NSString+MD5.m */,
+				52CD182720DA3B7D0098A876 /* UIBarButtonItem+SZ.h */,
+				52CD182820DA3B7D0098A876 /* UIBarButtonItem+SZ.m */,
+				52CD182920DA3B7D0098A876 /* UIView+SZFrame.h */,
+				52CD182A20DA3B7D0098A876 /* UIView+SZFrame.m */,
+				420E80BC20DA86340090C4EF /* UIDevice+Type.h */,
+				420E80BD20DA86340090C4EF /* UIDevice+Type.m */,
+				528C964720DC87EE0022EE29 /* UIImage+Extension.h */,
+				528C964820DC87EE0022EE29 /* UIImage+Extension.m */,
+				42E1EAE120DF5AD100C0EBB8 /* WKWebView+Storage.h */,
+				42E1EAE220DF5AD100C0EBB8 /* WKWebView+Storage.m */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		52CD183320DA3C6D0098A876 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				52CD183420DA3C910098A876 /* QQBaseTableController.h */,
+				52CD183520DA3C910098A876 /* QQBaseTableController.m */,
+				52CD183720DA3CD00098A876 /* QQBaseViewController.h */,
+				52CD183820DA3CD00098A876 /* QQBaseViewController.m */,
+				528C970A20DCEBA10022EE29 /* QQBaseNavController.h */,
+				528C970B20DCEBA10022EE29 /* QQBaseNavController.m */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		52CD183D20DA4EE60098A876 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				52CD183E20DA4F060098A876 /* MainTableView.h */,
+				52CD183F20DA4F060098A876 /* MainTableView.m */,
+				420E80B620DA81C50090C4EF /* MainTableCell.h */,
+				420E80B720DA81C50090C4EF /* MainTableCell.m */,
+				420E80B920DA828A0090C4EF /* MainCollectionCell.h */,
+				420E80BA20DA828A0090C4EF /* MainCollectionCell.m */,
+				528C970D20DCF09C0022EE29 /* QQMenuView.h */,
+				528C970E20DCF09C0022EE29 /* QQMenuView.m */,
+				420BE07120E1088400B1292C /* QQPictureView.xib */,
+				4225F58920DD0DEB00A44124 /* QQColorMenuView.xib */,
+				528C971020DCF0AE0022EE29 /* QQMenuView.xib */,
+				528C971220DCF7630022EE29 /* MenuButton.h */,
+				528C971320DCF7630022EE29 /* MenuButton.m */,
+				420022AC20DE448300FD9969 /* QQSearchHistoryView.h */,
+				420022AD20DE448300FD9969 /* QQSearchHistoryView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		ED94C617F9E5EDA643AFCFB8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C645E9236B4C92B0A4458B78 /* Pods-QQBrowser.debug.xcconfig */,
+				19409D4F409912CFD9E7F9FF /* Pods-QQBrowser.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		52CD17FA20DA38960098A876 /* QQBrowser */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 52CD181120DA389B0098A876 /* Build configuration list for PBXNativeTarget "QQBrowser" */;
+			buildPhases = (
+				17BAB89B23A2B5141328E00A /* [CP] Check Pods Manifest.lock */,
+				52CD17F720DA38960098A876 /* Sources */,
+				52CD17F820DA38960098A876 /* Frameworks */,
+				52CD17F920DA38960098A876 /* Resources */,
+				A85D360D8B6D4FAAAEE85C21 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = QQBrowser;
+			productName = QQBrowser;
+			productReference = 52CD17FB20DA38960098A876 /* QQBrowser.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		52CD17F320DA38950098A876 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = SZ;
+				TargetAttributes = {
+					52CD17FA20DA38960098A876 = {
+						CreatedOnToolsVersion = 9.4;
+					};
+				};
+			};
+			buildConfigurationList = 52CD17F620DA38960098A876 /* Build configuration list for PBXProject "QQBrowser" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 52CD17F220DA38950098A876;
+			productRefGroup = 52CD17FC20DA38960098A876 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				52CD17FA20DA38960098A876 /* QQBrowser */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		52CD17F920DA38960098A876 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52CD184220DA53960098A876 /* failRequest.html in Resources */,
+				528C971120DCF0AE0022EE29 /* QQMenuView.xib in Resources */,
+				52CD180B20DA389B0098A876 /* LaunchScreen.storyboard in Resources */,
+				4225F58A20DD0DEB00A44124 /* QQColorMenuView.xib in Resources */,
+				420BE07220E1088400B1292C /* QQPictureView.xib in Resources */,
+				52CD180820DA389B0098A876 /* Assets.xcassets in Resources */,
+				52CD180620DA38960098A876 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		17BAB89B23A2B5141328E00A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-QQBrowser-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A85D360D8B6D4FAAAEE85C21 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-QQBrowser/Pods-QQBrowser-resources.sh",
+				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
+				"${PODS_ROOT}/MMScan/MMScanner/resource.bundle",
+				"${PODS_ROOT}/SVProgressHUD/SVProgressHUD/SVProgressHUD.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MJRefresh.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/resource.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SVProgressHUD.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-QQBrowser/Pods-QQBrowser-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		52CD17F720DA38960098A876 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42E1EAE720DF818700C0EBB8 /* QQHistoryController.m in Sources */,
+				420BE07520E11FA600B1292C /* QQWindController.m in Sources */,
+				52CD183920DA3CD00098A876 /* QQBaseViewController.m in Sources */,
+				527F5FC120E1C7470054A202 /* HJCarouselViewLayout.m in Sources */,
+				52CD182E20DA3B7D0098A876 /* BBProgressHUD.m in Sources */,
+				52CD182F20DA3B7D0098A876 /* NSArray+Log.m in Sources */,
+				52CD183020DA3B7D0098A876 /* NSString+MD5.m in Sources */,
+				42E1EAE320DF5AD100C0EBB8 /* WKWebView+Storage.m in Sources */,
+				52A8DCA120E08314001A7926 /* QQSetFontController.m in Sources */,
+				528C971420DCF7630022EE29 /* MenuButton.m in Sources */,
+				52CD183220DA3B7D0098A876 /* UIView+SZFrame.m in Sources */,
+				420E80BE20DA86340090C4EF /* UIDevice+Type.m in Sources */,
+				529B5A0120DB793F00EF2C23 /* QQDetailController.m in Sources */,
+				52CD181720DA39880098A876 /* AppDelegate.m in Sources */,
+				52CD183120DA3B7D0098A876 /* UIBarButtonItem+SZ.m in Sources */,
+				52A8DCA420E08333001A7926 /* QQClearCacheController.m in Sources */,
+				527F5FC820E213D40054A202 /* QQScanController.m in Sources */,
+				528C970C20DCEBA10022EE29 /* QQBaseNavController.m in Sources */,
+				52CD184020DA4F060098A876 /* MainTableView.m in Sources */,
+				529843C920E315A8000E9168 /* QQGuideController.m in Sources */,
+				42E1EAEB20DF902200C0EBB8 /* QQHistoryCell.m in Sources */,
+				52CD183C20DA4A4B0098A876 /* QQMainViewController.m in Sources */,
+				528C970F20DCF09C0022EE29 /* QQMenuView.m in Sources */,
+				528C967D20DC94DC0022EE29 /* QQPagesController.m in Sources */,
+				527F5FC420E1CAD70054A202 /* QQCollectionCell.m in Sources */,
+				52A8DCA720E0835A001A7926 /* QQChangeUAController.m in Sources */,
+				528C96E520DC9D680022EE29 /* QQRootViewController.m in Sources */,
+				52CD180E20DA389B0098A876 /* main.m in Sources */,
+				52CD183620DA3C910098A876 /* QQBaseTableController.m in Sources */,
+				52CD182B20DA3B7D0098A876 /* BBConst.m in Sources */,
+				420BE07820E1206700B1292C /* QQNavigationController.m in Sources */,
+				52CD182D20DA3B7D0098A876 /* BBNetworkTool.m in Sources */,
+				42E1EAEF20DFF47E00C0EBB8 /* QQSettingController.m in Sources */,
+				528C964920DC87EE0022EE29 /* UIImage+Extension.m in Sources */,
+				529B59FD20DB345D00EF2C23 /* QQWeatherController.m in Sources */,
+				420E80B820DA81C50090C4EF /* MainTableCell.m in Sources */,
+				420022AE20DE448300FD9969 /* QQSearchHistoryView.m in Sources */,
+				529B5A0520DB87C300EF2C23 /* QQCategoryController.m in Sources */,
+				420E80BB20DA828A0090C4EF /* MainCollectionCell.m in Sources */,
+				52A8DCAA20E0E44B001A7926 /* QQURLProtocol.m in Sources */,
+				420022AB20DDFC1900FD9969 /* QQSearchController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		52CD180420DA38960098A876 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				52CD180520DA38960098A876 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		52CD180920DA389B0098A876 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				52CD180A20DA389B0098A876 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		52CD180F20DA389B0098A876 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		52CD181020DA389B0098A876 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		52CD181220DA389B0098A876 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C645E9236B4C92B0A4458B78 /* Pods-QQBrowser.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5H577PD883;
+				INFOPLIST_FILE = "$(SRCROOT)/QQBrowser/Other/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = cn.com.sz.QQBrowser;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		52CD181320DA389B0098A876 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 19409D4F409912CFD9E7F9FF /* Pods-QQBrowser.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5H577PD883;
+				INFOPLIST_FILE = "$(SRCROOT)/QQBrowser/Other/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = cn.com.sz.QQBrowser;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		52CD17F620DA38960098A876 /* Build configuration list for PBXProject "QQBrowser" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				52CD180F20DA389B0098A876 /* Debug */,
+				52CD181020DA389B0098A876 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		52CD181120DA389B0098A876 /* Build configuration list for PBXNativeTarget "QQBrowser" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				52CD181220DA389B0098A876 /* Debug */,
+				52CD181320DA389B0098A876 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 52CD17F320DA38950098A876 /* Project object */;
+}
