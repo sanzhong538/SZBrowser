@@ -13,7 +13,7 @@
 #import "UIDevice+Type.h"
 #import "BBConst.h"
 
-@interface QQDetailController ()<UIScrollViewDelegate>
+@interface QQDetailController ()<UIScrollViewDelegate, UIGestureRecognizerDelegate>
 
 @property (nonatomic, strong) UIProgressView *progressView;
 @property (nonatomic, copy) NSString *webTitle;
@@ -30,6 +30,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [UIApplication sharedApplication].statusBarStyle = UIStatusBarStyleDefault;
+    self.navigationController.interactivePopGestureRecognizer.enabled = YES;
+    self.navigationController.interactivePopGestureRecognizer.delegate = self;
     self.offsetY = [UIDevice isIPoneX] ? 88 : 64;
     self.tabBarHeight = [UIDevice isIPoneX] ? 83 : 49;
     [self addWebView];
@@ -94,7 +96,11 @@
 
 - (void)clickBackBtn {
 
-    [self.navigationController popViewControllerAnimated:YES];
+    if ([self.webView canGoBack]) {
+        [self.webView goBack];
+    } else {
+        [self.navigationController popViewControllerAnimated:YES];
+    }
 }
 
 - (void)clickMutilwindBtn {
