@@ -204,10 +204,11 @@
     
     if (![self canClick]) return;
     if (self.currentController.topView != self.currentController.view) {
-        if (self.currentController.withoutSpecialSubView) {
+        if (self.currentController.specialTopView != self.currentController.topView) {
             [self.currentController.topView removeFromSuperview];
-            self.currentController.topView = self.currentController.view;
         }
+        self.currentController.specialTopView.hidden = YES;
+        self.currentController.topView = self.currentController.view;
     }
     [self.currentController reloadData];
     [self refreshBottomView];
@@ -221,7 +222,7 @@
     }
     NSInteger index = [self checkIndexOfTopView];
     if (index <= 0) {
-        if (self.currentController.withoutSpecialSubView) {
+        if (self.currentController.specialTopView.hidden) {
             [self.currentController reloadData];
         }
         self.currentController.topView = self.currentController.view;

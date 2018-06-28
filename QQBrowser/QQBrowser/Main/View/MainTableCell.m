@@ -48,9 +48,9 @@
     
     CGFloat WH;
     if (BBSCREENWIDTH < 375) {
-        WH = (BBSCREENWIDTH-4*10-10*2)/5.0;
+        WH = floor((BBSCREENWIDTH-4*10-10*2)/5.0);
     } else {
-        WH = (BBSCREENWIDTH-5*10-10*2)/6.0;
+        WH = floor((BBSCREENWIDTH-5*10-10*2)/6.0);
     }
     return CGSizeMake(WH, WH);
 }

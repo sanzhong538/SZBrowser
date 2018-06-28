@@ -67,13 +67,13 @@
     self.searchFieldLeftConstraint.constant = 10;
     self.searchField.rightViewMode = UITextFieldViewModeAlways;
     [self.mainTableView setContentOffset:CGPointMake(0, -self.headerHeight) animated:NO];
-    if (!self.moreCategoryView.hidden) {
+    if (self.upAnimatImgV) {
         [self.upAnimatImgV removeFromSuperview];
-        [self.downAnimatImgV removeFromSuperview];
         self.upAnimatImgV = nil;
+    }
+    if (self.downAnimatImgV) {
+        [self.downAnimatImgV removeFromSuperview];
         self.downAnimatImgV = nil;
-        self.moreCategoryView.hidden = YES;
-        self.topView = self.view;
     }
     [self loadData];
 }
@@ -259,6 +259,7 @@
 - (void)changeStatus {
     
     [self.mainTableView setScrollEnabled:YES];
+    self.mainTableView.canSlip = YES;
     if (!self.searchField.isFirstResponder) {
         CGPoint p =  [self.mainTableView.panGestureRecognizer translationInView:self.mainTableView];
         if (p.y > 0) {
@@ -423,7 +424,7 @@
         UITableViewCell *cell = [[UITableViewCell alloc] init];
         cell.selectionStyle = UITableViewCellSelectionStyleNone;
         [cell.subviews makeObjectsPerformSelector:@selector(removeFromSuperview)];
-        if (self.moreCategoryView.hidden) {
+        if (!self.moreCategoryView || self.moreCategoryView.hidden) {
             [cell addSubview:self.webView];
         } else {
             [cell addSubview:self.moreWebView];
@@ -438,7 +439,7 @@
         return self.bannerHeight;
     } else {
         CGFloat H = [UIDevice isIPoneX] ? BBSCREENHEIGHT - 88 - 83 : BBSCREENHEIGHT - 64 - 49;
-        if (self.moreCategoryView.hidden) {
+        if (!self.moreCategoryView || self.moreCategoryView.hidden) {
             self.webView.height = H;
         } else {
             self.moreWebView.height = H;
@@ -450,15 +451,15 @@
 - (void)scrollViewWillBeginDragging:(UIScrollView *)scrollView {
     
     if (self.mainTableView == scrollView) {
-        UIPanGestureRecognizer *pan = scrollView.panGestureRecognizer;
-        if (pan) {
-            CGPoint p = [pan translationInView:self.mainTableView];
-            if (p.y > 0 && scrollView.contentOffset.y == -self.headerHeight) {
-                [self.mainTableView setScrollEnabled:NO];
-            } else {
-                [self.mainTableView setScrollEnabled:YES];
-            }
-        }
+//        UIPanGestureRecognizer *pan = scrollView.panGestureRecognizer;
+//        if (pan) {
+//            CGPoint p = [pan translationInView:self.mainTableView];
+//            if (p.y > 0 && scrollView.contentOffset.y == -self.headerHeight) {
+//                [self.mainTableView setScrollEnabled:NO];
+//            } else {
+//                [self.mainTableView setScrollEnabled:YES];
+//            }
+//        }
     }
 }
 
@@ -515,6 +516,8 @@
     } else {
         if (self.webView.scrollView.contentOffset.y <= 0) {
             self.mainTableView.canSlip = YES;
+        } else {
+            self.mainTableView.canSlip = NO;
         }
     }
 }
@@ -555,9 +558,9 @@
 
 - (CGFloat)bannerHeight {
     
-    NSArray *tempArray = self.moreCategoryView.hidden ? self.resultDict[@"banner"] : self.resultDict[@"banner_more"];
+    NSArray *tempArray = (!self.moreCategoryView || self.moreCategoryView.hidden) ? self.resultDict[@"banner"] : self.resultDict[@"banner_more"];
     if (self.resultDict && tempArray && [tempArray count]) {
-        NSUInteger count = [self.resultDict[@"banner"] count];
+        NSUInteger count = [tempArray count];
         if (BBSCREENWIDTH < 375) {
             CGFloat WH = (BBSCREENWIDTH-4*10-10*2)/5.0;
             NSUInteger col = (count + 4) / 5;
@@ -638,9 +641,9 @@
     return _categoryVC;
 }
 
-- (BOOL)withoutSpecialSubView {
+- (UIView *)specialTopView {
     
-    return self.moreCategoryView.hidden;
+    return self.moreCategoryView;
 }
 
 - (BOOL)canMark {

@@ -11,7 +11,7 @@
 @interface QQMainViewController : QQBaseViewController
 
 @property (nonatomic, assign) BOOL canMark;
-@property (nonatomic, assign) BOOL withoutSpecialSubView;
+@property (nonatomic, assign) UIView *specialTopView;
 @property (nonatomic, strong) UIView *topView;
 @property (nonatomic, copy) NSString *topViewType;
 
