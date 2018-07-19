@@ -46,16 +46,24 @@
 - (void)getData {
     
     NSDictionary *dict = NSUserDefaults_get(@"browseHistory");
-    self.keysArray = [dict allKeys];
-    WS(weakSelf)
-    NSMutableArray *tempArray = [NSMutableArray arrayWithCapacity:self.keysArray.count];
-    __block NSInteger  index = 0;
-    [dict enumerateKeysAndObjectsUsingBlock:^(id  _Nonnull key, id  _Nonnull obj, BOOL * _Nonnull stop) {
-        tempArray[weakSelf.keysArray.count-1-index] = obj;
-        index++;
-    }];
-    self.historyArray = tempArray.copy;
-    self.bookmarkArray = NSUserDefaults_get(@"bookmark");
+    if (dict) {
+        self.keysArray = [[dict allKeys] sortedArrayUsingComparator:^NSComparisonResult(id  _Nonnull obj1, id  _Nonnull obj2) {
+            return NSOrderedDescending;
+        }];
+        NSMutableArray *tempArray = [NSMutableArray arrayWithCapacity:self.keysArray.count];
+        for (NSString *key in self.keysArray) {
+            [tempArray addObject:dict[key]];
+        }
+        self.historyArray = tempArray.copy;
+    } else {
+        self.keysArray = [NSArray array];
+        self.historyArray = [NSArray array];
+    }
+    if (NSUserDefaults_get(@"bookmark")) {
+        self.bookmarkArray = NSUserDefaults_get(@"bookmark");
+    } else {
+        self.bookmarkArray = [NSArray array];
+    }
     self.segmentedControl.selectedSegmentIndex = 1;
     [self.tableView reloadData];
 }

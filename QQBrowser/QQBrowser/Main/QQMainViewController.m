@@ -263,11 +263,11 @@
     if (!self.searchField.isFirstResponder) {
         CGPoint p =  [self.mainTableView.panGestureRecognizer translationInView:self.mainTableView];
         if (p.y > 0) {
-            [self.mainTableView setContentOffset:CGPointMake(0, -self.headerHeight) animated:YES];
+            [self.mainTableView setContentOffset:CGPointMake(0, -self.headerHeight) animated:NO];
             [UIApplication sharedApplication].statusBarStyle = UIStatusBarStyleLightContent;
             
         } else  if (p.y < 0){
-            [self.mainTableView setContentOffset:CGPointMake(0, self.self.maxOffsetY) animated:YES];
+            [self.mainTableView setContentOffset:CGPointMake(0, self.self.maxOffsetY) animated:NO];
             [UIApplication sharedApplication].statusBarStyle = UIStatusBarStyleDefault;
         }
     }
@@ -501,7 +501,8 @@
             self.recommendBtn.hidden = hide;
             CGPoint p =  [scrollView.panGestureRecognizer translationInView:self.mainTableView];
             if (p.y > 0 && self.webView.scrollView.contentOffset.y > 0) {
-                self.mainTableView.contentOffset = CGPointMake(0, self.maxOffsetY);
+//                self.mainTableView.contentOffset = CGPointMake(0, self.maxOffsetY);
+                [self.mainTableView setContentOffset:CGPointMake(0, self.maxOffsetY) animated:NO];
             } else {
                 [self.webView.scrollView setContentOffset:CGPointZero animated:NO];
             }
